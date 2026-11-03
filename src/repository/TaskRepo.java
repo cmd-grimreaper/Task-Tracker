@@ -1,20 +1,20 @@
 package repository;
 
-import model.TaskModel;
+import model.Task;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaskRepo {
 
-    List<TaskModel> repository = new ArrayList<>();
-    public void addTask(TaskModel task) {
+    List<Task> repository = new ArrayList<>();
+    public void addTask(Task task) {
 
         repository.add(task);
     }
 
     public void allTask(){
-        for (TaskModel repo : repository){
+        for (Task repo : repository){
             System.out.println(repo);
         }
     }

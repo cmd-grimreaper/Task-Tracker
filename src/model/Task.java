@@ -2,17 +2,18 @@ package model;
 
 import java.time.LocalDateTime;
 
-public class TaskModel {
+public class Task {
     private int id;
     private  String description;
     private boolean completed;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    private static int counter = 1;
 
 
-    public TaskModel(){}
-    public TaskModel(int id,String description, boolean completed){
-        this.id = id ;
+    public Task(){}
+    public Task(String description, boolean completed){
+        this.id = counter++ ;
         this.description = description ;
         this.completed = completed ;
 
