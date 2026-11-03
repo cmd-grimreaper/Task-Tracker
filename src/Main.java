@@ -1,13 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+class Main {
+    static void main() {
+
     }
 }
+
+
+
+/*
+* what we want to be able to do :
+* add task, update task , delete task
+* Mark a task as in progress or done
+* should be able to list all task
+*should be able to list all completed task
+* should be able to list uncompleted task
+* list all that are in progress
+*
+*
+*
+*
+* Task Properties
+Each task should have the following properties:
+id: A unique identifier for the task
+description: A short description of the task
+status: The status of the task
+createdAt: The date and time when the task was created
+updatedAt: The date and time when the task was last updated
+Make sure to add these properties to the JSON file when adding a new task and update them when updating a task.
+
+
+*
+* */
